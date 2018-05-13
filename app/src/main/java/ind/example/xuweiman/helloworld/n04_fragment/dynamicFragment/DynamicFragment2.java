@@ -15,7 +15,8 @@ import ind.example.xuweiman.helloworld.R;
 public class DynamicFragment2 extends Fragment {
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.dynamic_fragment_1, container, false);
         Button button = view.findViewById(R.id.dynamic_bottom_fragment_btn);
         button.setText("按钮2");
