@@ -2,6 +2,7 @@ package ind.example.xuweiman.helloworld;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,9 @@ import ind.example.xuweiman.helloworld.n03_customViews.horizontalRecyclerView.Ho
 import ind.example.xuweiman.helloworld.n03_customViews.recyclerView.RecyclerViewActivity;
 import ind.example.xuweiman.helloworld.n04_fragment.basicFragment.BasicFragmentActivity;
 import ind.example.xuweiman.helloworld.n04_fragment.dynamicFragment.DynamicFragmentActivity;
+import ind.example.xuweiman.helloworld.n05_broadcast.basicBroadcast.BasicBroadcastActivity;
+import ind.example.xuweiman.helloworld.n05_broadcast.basicBroadcast.LocalBroadcastActivity;
+import ind.example.xuweiman.helloworld.n05_broadcast.orderedBroadcast.OrderedBroadcastActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
 
         btnMap.put((Button) findViewById(R.id.learnDynamicFragment),
                 new Intent(getApplicationContext(), DynamicFragmentActivity.class));
+
+        btnMap.put((Button) findViewById(R.id.learnBasicBroadcast),
+                new Intent(getApplicationContext(), BasicBroadcastActivity.class));
+        btnMap.put((Button) findViewById(R.id.learnOrderedBroadcast),
+                new Intent(getApplicationContext(), OrderedBroadcastActivity.class));
+        btnMap.put((Button) findViewById(R.id.learnLocalBroadcast),
+                new Intent(getApplicationContext(), LocalBroadcastActivity.class));
     }
 
     @Override
